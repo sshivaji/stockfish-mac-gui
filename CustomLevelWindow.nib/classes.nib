@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancelButtonPressed = id; okButtonPressed = id; }; 
+            CLASS = CustomLevelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackInitialTime = id; 
+                blackMoveBonus = id; 
+                whiteInitialTime = id; 
+                whiteMoveBonus = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

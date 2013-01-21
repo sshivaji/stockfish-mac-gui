@@ -1,0 +1,30 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SetupR64BoardView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                cancelButtonPressed = id; 
+                castleRightsChanged = id; 
+                clearBoardButtonPressed = id; 
+                okButtonPressed = id; 
+                resetButtonPressed = id; 
+                selectedPieceChanged = id; 
+                sideToMoveChanged = id; 
+            }; 
+            CLASS = SetupR64WindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackOoCheckbox = id; 
+                blackOooCheckbox = id; 
+                pieceChoiceMatrix = id; 
+                setupBoardView = id; 
+                sideToMoveCheckbox = id; 
+                whiteOoCheckbox = id; 
+                whiteOooCheckbox = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

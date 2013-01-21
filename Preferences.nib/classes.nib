@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>analysisInMoveListSwitched</key>
+				<string>id</string>
+				<key>beepWhenMoveSwitched</key>
+				<string>id</string>
+				<key>changeDarkSquareColor</key>
+				<string>id</string>
+				<key>changeLightSquareColor</key>
+				<string>id</string>
+				<key>hashTextFieldChanged</key>
+				<string>id</string>
+				<key>resignSwitched</key>
+				<string>id</string>
+				<key>whiteScoreSwitched</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>PreferencesController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>analysisInMoveListSwitch</key>
+				<string>id</string>
+				<key>beepWhenMoveSwitch</key>
+				<string>id</string>
+				<key>darkColorWell</key>
+				<string>id</string>
+				<key>hashSizeTextField</key>
+				<string>id</string>
+				<key>lightColorWell</key>
+				<string>id</string>
+				<key>resignSwitch</key>
+				<string>id</string>
+				<key>whiteScoreSwitch</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSWindowController</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

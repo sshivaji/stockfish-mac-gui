@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancelButtonPressed = id; okButtonPressed = id; }; 
+            CLASS = CommentWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {textView = NSTextView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

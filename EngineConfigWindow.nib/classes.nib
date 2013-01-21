@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancelButtonPressed = id; defaultsButtonPressed = id; okButtonPressed = id; }; 
+            CLASS = EngineConfigController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bookChoicePopup = id; 
+                bookVarietyPopup = id; 
+                control = id; 
+                currentOptionBox = NSBox; 
+                currentOptionInfo = NSTextField; 
+                currentOptionName = NSTextField; 
+                optionsTable = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

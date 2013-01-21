@@ -1,0 +1,1213 @@
+
+AppController.h,142
+@class BoardController;22,777
+@class PreferencesController;23,801
+@class UninstallWindowController;24,831
+@interface AppController 26,866
+
+BoardController.h,946
+@class BoardView;22,777
+@class Book;23,795
+@class ChessMove;24,808
+@class CommentWindowController;25,826
+@class CustomLevelController;26,858
+@class EngineConfigController;27,888
+@class EngineController;28,919
+@class Game;29,944
+@class MatchController;30,957
+@class NewEngineMatchController;31,981
+@class SearchLogController;32,1014
+@class SetupR64WindowController;33,1042
+enum {COMPUTER_WHITE,COMPUTER_WHITE35,1076
+enum {COMPUTER_WHITE, COMPUTER_BLACK,35,1076
+enum {COMPUTER_WHITE, COMPUTER_BLACK, BOTH,35,1076
+enum {COMPUTER_WHITE, COMPUTER_BLACK, BOTH, ANALYSIS,35,1076
+enum {COMPUTER_WHITE, COMPUTER_BLACK, BOTH, ANALYSIS, ENGINE_MATCH}ENGINE_MATCH35,1076
+enum {BLITZ_LEVEL,BLITZ_LEVEL36,1145
+enum {BLITZ_LEVEL, FISCHER_LEVEL,36,1145
+enum {BLITZ_LEVEL, FISCHER_LEVEL, OLDFASHIONED_LEVEL,36,1145
+enum {BLITZ_LEVEL, FISCHER_LEVEL, OLDFASHIONED_LEVEL, CUSTOM_LEVEL}CUSTOM_LEVEL36,1145
+@interface BoardController 38,1215
+
+BoardView.h,58
+@class MoveAnimation;22,777
+@interface BoardView 24,800
+
+Book.h,189
+  LOW_VARIETY,23,784
+  LOW_VARIETY, MEDIUM_VARIETY,23,784
+  LOW_VARIETY, MEDIUM_VARIETY, HIGH_VARIETY23,784
+@class ChessMove;26,832
+@class ChessPosition;27,850
+@interface Book 29,873
+
+ChessClock.h,30
+@interface ChessClock 23,778
+
+ChessMove.h,29
+@interface ChessMove 24,824
+
+ChessPosition.h,58
+@class ChessMove;23,798
+@interface ChessPosition 25,817
+
+CommentWindowController.h,99
+@class BoardController;22,777
+@class ChessMove;23,801
+@interface CommentWindowController 25,820
+
+CustomLevelController.h,72
+@class BoardController;22,777
+@interface CustomLevelController 24,802
+
+Engine.h,83
+@class EngineController;22,777
+@class UCIOption;23,802
+@interface Engine 25,821
+
+EngineConfigController.h,64
+@class Engine;22,777
+@interface EngineConfigController 24,793
+
+EngineController.h,367
+@class BoardController;22,777
+@class ChessMove;23,801
+@class ChessPosition;24,819
+@class Engine;25,841
+@class Game;26,856
+enum {PLAYING_WHITE,PLAYING_WHITE28,870
+enum {PLAYING_WHITE, PLAYING_BLACK,28,870
+enum {PLAYING_WHITE, PLAYING_BLACK, ANALYSING,28,870
+enum {PLAYING_WHITE, PLAYING_BLACK, ANALYSING, IDLE}IDLE28,870
+@interface EngineController 30,925
+
+EngineInstaller.h,35
+@interface EngineInstaller 23,778
+
+Game.h,24
+@interface Game 26,869
+
+GameListController.h,88
+@class BoardController;22,777
+@class PGN;23,801
+@interface GameListController 25,814
+
+GameNode.h,82
+@class ChessPosition;22,777
+@class ChessMove;23,799
+@interface GameNode 25,818
+
+GameParser.h,238
+#define PGN_STRING_SIZE 22,777
+  TOKEN_ERROR 25,813
+  TOKEN_EOF 26,833
+  TOKEN_SYMBOL 27,852
+  TOKEN_STRING 28,874
+  TOKEN_INTEGER 29,896
+  TOKEN_NAG 30,919
+  TOKEN_RESULT 31,938
+} PGNToken;37,1024
+@interface GameParser 39,1037
+
+MatchController.h,105
+@class BoardController;22,777
+@class Game;23,801
+@class PGN;24,814
+@interface MatchController 26,827
+
+MoveAnimation.h,33
+@interface MoveAnimation 21,776
+
+MyNSAttributedStringAdditions.h,119
+@interface NSAttributedString (MyNSAttributedStringAdditions)NSAttributedString(MyNSAttributedStringAdditions)23,778
+
+MyNSMutableAttributedStringAdditions.h,147
+@interface NSMutableAttributedString (MyNSMutableAttributedStringAdditions)NSMutableAttributedString(MyNSMutableAttributedStringAdditions)23,778
+
+NewEngineMatchController.h,75
+@class BoardController;22,777
+@interface NewEngineMatchController 24,802
+
+PGN.h,56
+#define PGN_STRING_SIZE 29,984
+@interface PGN 31,1013
+
+PGNProgressController.h,41
+@interface PGNProgressController 22,777
+
+PreferencesController.h,39
+@interface PreferencesController 5,54
+
+SearchLogController.h,39
+@interface SearchLogController 22,777
+
+SetupR64BoardView.h,77
+@class SetupR64WindowController;22,777
+@interface SetupR64BoardView 24,811
+
+SetupR64WindowController.h,104
+@class BoardController;22,777
+@class ChessPosition;23,801
+@interface SetupR64WindowController 25,824
+
+UCIOption.h,360
+enum {UCI_SPIN,UCI_SPIN22,777
+enum {UCI_SPIN, UCI_COMBO,22,777
+enum {UCI_SPIN, UCI_COMBO, UCI_CHECK,22,777
+enum {UCI_SPIN, UCI_COMBO, UCI_CHECK, UCI_STRING,22,777
+enum {UCI_SPIN, UCI_COMBO, UCI_CHECK, UCI_STRING, UCI_BUTTON,22,777
+enum {UCI_SPIN, UCI_COMBO, UCI_CHECK, UCI_STRING, UCI_BUTTON, UCI_UNKNOWN}UCI_UNKNOWN22,777
+@interface UCIOption 24,854
+
+UninstallWindowController.h,45
+@interface UninstallWindowController 22,777
+
+frc-fens.h,29
+char FRCFens[FRCFens20,752
+
+position.h,11982
+#define POSITION_H_INCLUDED21,786
+#define STARTPOS 47,1161
+#define MAX_GAME_LENGTH 49,1238
+enum {WHITE,WHITE51,1268
+enum {WHITE, BLACK}BLACK51,1268
+enum {PAWN=PAWN53,1290
+enum {PAWN=1, KNIGHT=53,1290
+enum {PAWN=1, KNIGHT=2, BISHOP=53,1290
+enum {PAWN=1, KNIGHT=2, BISHOP=3, ROOK=53,1290
+enum {PAWN=1, KNIGHT=2, BISHOP=3, ROOK=4, QUEEN=53,1290
+enum {PAWN=1, KNIGHT=2, BISHOP=3, ROOK=4, QUEEN=5, KING=53,1290
+enum {WP=WP54,1350
+enum {WP=1, WN=54,1350
+enum {WP=1, WN=2, WB=54,1350
+enum {WP=1, WN=2, WB=3, WR=54,1350
+enum {WP=1, WN=2, WB=3, WR=4, WQ=54,1350
+enum {WP=1, WN=2, WB=3, WR=4, WQ=5, WK=54,1350
+      BP=55,1393
+      BP=9, BN=55,1393
+      BP=9, BN=10, BB=55,1393
+      BP=9, BN=10, BB=11, BR=55,1393
+      BP=9, BN=10, BB=11, BR=12, BQ=55,1393
+      BP=9, BN=10, BB=11, BR=12, BQ=13, BK=55,1393
+      EMPTY=56,1440
+      EMPTY=16, OUTSIDE=56,1440
+enum {RANK_1,RANK_158,1470
+enum {RANK_1, RANK_2,58,1470
+enum {RANK_1, RANK_2, RANK_3,58,1470
+enum {RANK_1, RANK_2, RANK_3, RANK_4,58,1470
+enum {RANK_1, RANK_2, RANK_3, RANK_4, RANK_5,58,1470
+enum {RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6,58,1470
+enum {RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6, RANK_7,58,1470
+enum {RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6, RANK_7, RANK_8}RANK_858,1470
+enum {FILE_A,FILE_A59,1541
+enum {FILE_A, FILE_B,59,1541
+enum {FILE_A, FILE_B, FILE_C,59,1541
+enum {FILE_A, FILE_B, FILE_C, FILE_D,59,1541
+enum {FILE_A, FILE_B, FILE_C, FILE_D, FILE_E,59,1541
+enum {FILE_A, FILE_B, FILE_C, FILE_D, FILE_E, FILE_F,59,1541
+enum {FILE_A, FILE_B, FILE_C, FILE_D, FILE_E, FILE_F, FILE_G,59,1541
+enum {FILE_A, FILE_B, FILE_C, FILE_D, FILE_E, FILE_F, FILE_G, FILE_H}FILE_H59,1541
+typedef enum result_t 61,1613
+  WHITE_WINS,62,1637
+  WHITE_WINS, BLACK_WINS,62,1637
+  WHITE_WINS, BLACK_WINS, WHITE_STALEMATES,62,1637
+  WHITE_WINS, BLACK_WINS, WHITE_STALEMATES, BLACK_STALEMATES,62,1637
+  WHITE_WINS, BLACK_WINS, WHITE_STALEMATES, BLACK_STALEMATES, DRAW,62,1637
+  WHITE_WINS, BLACK_WINS, WHITE_STALEMATES, BLACK_STALEMATES, DRAW, UNKNOWN62,1637
+} result_t;63,1713
+#define ColourOfPiece(65,1726
+#define PieceHasColour(66,1770
+#define PieceIsWhite(67,1844
+#define PieceIsBlack(68,1903
+#define TypeOfPiece(70,1963
+#define PieceHasType(71,2004
+#define PieceIsPawn(72,2067
+#define PieceIsKnight(73,2122
+#define PieceIsBishop(74,2181
+#define PieceIsRook(75,2240
+#define PieceIsQueen(76,2295
+#define PieceIsKing(77,2352
+#define PieceOfColourAndType(79,2408
+#define PieceHasColourAndType(80,2478
+#define PawnOfColour(83,2582
+#define KnightOfColour(84,2648
+#define BishopOfColour(85,2718
+#define RookOfColour(86,2788
+#define QueenOfColour(87,2854
+#define KingOfColour(88,2922
+#define PiecesHaveSameColour(90,2989
+#define PiecesHaveOppositeColour(91,3067
+#define PieceIsSlider(94,3154
+#define PawnCount(96,3206
+#define KnightCount(97,3268
+#define BishopCount(98,3334
+#define RookCount(99,3400
+#define QueenCount(100,3462
+#define HasPieceOfType(102,3527
+#define HasPawns(103,3604
+#define HasKnights(104,3664
+#define HasBishops(105,3728
+#define HasRooks(106,3792
+#define HasQueens(107,3852
+#define HasSliders(108,3914
+#define HasHorizontalSliders(110,4012
+#define HasDiagonalSliders(112,4097
+#define KingSquare(115,4183
+#define PieceList(116,4258
+#define PieceListStart(117,4308
+#define NextPiece(118,4377
+#define PrevPiece(119,4437
+#define RemovePiece(121,4498
+#define InsertPiece(126,4718
+#define MovePiece(133,5017
+#define PieceListEnd 139,5243
+#define PawnListStart(141,5280
+#define KnightListStart(142,5351
+#define BishopListStart(143,5426
+#define RookListStart(144,5501
+#define QueenListStart(145,5572
+#define Queenside 147,5646
+#define Kingside 148,5666
+#define WhiteOOMask 149,5685
+#define WhiteOOOMask 150,5707
+#define BlackOOMask 151,5730
+#define BlackOOOMask 152,5752
+#define CanCastleQueenside(158,5901
+#define CanCastleKingside(159,5985
+#define CanCastle(160,6064
+#define ProhibitOO(163,6159
+#define ProhibitOOO(164,6232
+#define NullMove 166,6311
+#define NoMove 167,6330
+#define MvFrom(169,6348
+#define MvTo(170,6381
+#define MvPromotion(171,6407
+#define MvPiece(172,6444
+#define MvCapture(173,6477
+#define EPFlag 174,6512
+#define MvEP(175,6535
+#define CastleFlag 176,6564
+#define MvCastle(177,6591
+#define MvShortCastle(178,6628
+#define MvLongCastle(179,6698
+#define WP_MASK 181,6768
+#define BP_MASK 182,6786
+#define N_MASK 183,6804
+#define K_MASK 184,6821
+#define B_MASK 185,6838
+#define R_MASK 186,6856
+#define Q_MASK 187,6874
+#define EXPAND(189,6893
+#define COMPRESS(190,6926
+#define ZOBRIST(192,6966
+#define ZOB_EP(193,7015
+#define ZOB_CASTLE(194,7052
+#define Max(196,7088
+#define Min(197,7125
+#define SquareFile(199,7163
+#define SquareRank(200,7194
+  A1=203,7233
+  A1=0x00,x00203,7233
+  A1=0x00, B1=203,7233
+  A1=0x00, B1=0x01,x01203,7233
+  A1=0x00, B1=0x01, C1=203,7233
+  A1=0x00, B1=0x01, C1=0x02,x02203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03,x03203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04,x04203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=0x05,x05203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=0x05, G1=203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=0x05, G1=0x06,x06203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=0x05, G1=0x06, H1=203,7233
+  A1=0x00, B1=0x01, C1=0x02, D1=0x03, E1=0x04, F1=0x05, G1=0x06, H1=0x07,x07203,7233
+  A2=204,7307
+  A2=0x10,x10204,7307
+  A2=0x10, B2=204,7307
+  A2=0x10, B2=0x11,x11204,7307
+  A2=0x10, B2=0x11, C2=204,7307
+  A2=0x10, B2=0x11, C2=0x12,x12204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13,x13204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14,x14204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=0x15,x15204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=0x15, G2=204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=0x15, G2=0x16,x16204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=0x15, G2=0x16, H2=204,7307
+  A2=0x10, B2=0x11, C2=0x12, D2=0x13, E2=0x14, F2=0x15, G2=0x16, H2=0x17,x17204,7307
+  A3=205,7381
+  A3=0x20,x20205,7381
+  A3=0x20, B3=205,7381
+  A3=0x20, B3=0x21,x21205,7381
+  A3=0x20, B3=0x21, C3=205,7381
+  A3=0x20, B3=0x21, C3=0x22,x22205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23,x23205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24,x24205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=0x25,x25205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=0x25, G3=205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=0x25, G3=0x26,x26205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=0x25, G3=0x26, H3=205,7381
+  A3=0x20, B3=0x21, C3=0x22, D3=0x23, E3=0x24, F3=0x25, G3=0x26, H3=0x27,x27205,7381
+  A4=206,7455
+  A4=0x30,x30206,7455
+  A4=0x30, B4=206,7455
+  A4=0x30, B4=0x31,x31206,7455
+  A4=0x30, B4=0x31, C4=206,7455
+  A4=0x30, B4=0x31, C4=0x32,x32206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33,x33206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34,x34206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=0x35,x35206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=0x35, G4=206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=0x35, G4=0x36,x36206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=0x35, G4=0x36, H4=206,7455
+  A4=0x30, B4=0x31, C4=0x32, D4=0x33, E4=0x34, F4=0x35, G4=0x36, H4=0x37,x37206,7455
+  A5=207,7529
+  A5=0x40,x40207,7529
+  A5=0x40, B5=207,7529
+  A5=0x40, B5=0x41,x41207,7529
+  A5=0x40, B5=0x41, C5=207,7529
+  A5=0x40, B5=0x41, C5=0x42,x42207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43,x43207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44,x44207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=0x45,x45207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=0x45, G5=207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=0x45, G5=0x46,x46207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=0x45, G5=0x46, H5=207,7529
+  A5=0x40, B5=0x41, C5=0x42, D5=0x43, E5=0x44, F5=0x45, G5=0x46, H5=0x47,x47207,7529
+  A6=208,7603
+  A6=0x50,x50208,7603
+  A6=0x50, B6=208,7603
+  A6=0x50, B6=0x51,x51208,7603
+  A6=0x50, B6=0x51, C6=208,7603
+  A6=0x50, B6=0x51, C6=0x52,x52208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53,x53208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54,x54208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=0x55,x55208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=0x55, G6=208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=0x55, G6=0x56,x56208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=0x55, G6=0x56, H6=208,7603
+  A6=0x50, B6=0x51, C6=0x52, D6=0x53, E6=0x54, F6=0x55, G6=0x56, H6=0x57,x57208,7603
+  A7=209,7677
+  A7=0x60,x60209,7677
+  A7=0x60, B7=209,7677
+  A7=0x60, B7=0x61,x61209,7677
+  A7=0x60, B7=0x61, C7=209,7677
+  A7=0x60, B7=0x61, C7=0x62,x62209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63,x63209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64,x64209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=0x65,x65209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=0x65, G7=209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=0x65, G7=0x66,x66209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=0x65, G7=0x66, H7=209,7677
+  A7=0x60, B7=0x61, C7=0x62, D7=0x63, E7=0x64, F7=0x65, G7=0x66, H7=0x67,x67209,7677
+  A8=210,7751
+  A8=0x70,x70210,7751
+  A8=0x70, B8=210,7751
+  A8=0x70, B8=0x71,x71210,7751
+  A8=0x70, B8=0x71, C8=210,7751
+  A8=0x70, B8=0x71, C8=0x72,x72210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73,x73210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74,x74210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=0x75,x75210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=0x75, G8=210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=0x75, G8=0x76,x76210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=0x75, G8=0x76, H8=210,7751
+  A8=0x70, B8=0x71, C8=0x72, D8=0x73, E8=0x74, F8=0x75, G8=0x76, H8=0x77x77210,7751
+typedef signed char int8;218,7851
+typedef unsigned char uint8;219,7877
+typedef signed short int16;220,7906
+typedef unsigned short uint16;221,7934
+typedef signed long int32;222,7965
+typedef unsigned long uint32;223,7992
+typedef signed long long int64;224,8022
+typedef unsigned long long uint64;225,8054
+typedef int move_t;227,8090
+typedef uint64 hashkey_t;229,8111
+typedef struct list_t 231,8138
+} list_t;233,8176
+typedef struct position_t 235,8187
+} position_t;251,8561
+typedef struct move_stack_t 253,8576
+} move_stack_t;255,8621
+typedef struct undo_info_t 257,8638
+} undo_info_t;261,8764
+typedef struct attack_data_t 263,8780
+} attack_data_t;266,8844
+
+AppController.m,830
+static BOOL this_mac_runs_leopard(30,982
++(void)initialize 44,1470
+-(id)init 123,4165
+-(void)updateEnginesMenu 130,4343
+-(void)awakeFromNib 154,5027
+-(IBAction)openGameFile:159,5109
+-(IBAction)selectEngine:174,5588
+-(id)boardController 180,5785
+-(IBAction)copyPosition:184,5837
+-(IBAction)copyGame:192,6124
+-(IBAction)paste:200,6389
+-(IBAction)computerPlaysBlack:246,7675
+-(IBAction)computerPlaysWhite:250,7769
+-(IBAction)youPlayBoth:254,7863
+-(IBAction)analysisMode:258,7946
+-(void)waitForEngineExit:262,8028
+-(void)installEngineWithPath:280,8492
+-(IBAction)installNewUCIEngine:289,8771
+-(IBAction)uninstallUCIEngine:295,8969
+-(IBAction)preferences:302,9208
+-(BOOL)validateMenuItem:309,9420
+-(void)applicationDidFinishLaunching:352,10657
+-(void)applicationWillTerminate:356,10769
+-(void)dealloc 359,10838
+
+BoardController.m,3853
+-(id)init 40,1224
+-(void)raiseBoardWindow 95,2861
+-(int)pieceAtSquare:99,2933
+-(void)destinationSquaresFrom:(int)sqIndex storeIn:destinationSquaresFrom:storeIn:107,3170
+-(void)gameOver 118,3537
+-(NSString *)moveListString 157,4773
+-(NSAttributedString *)moveListAttributedString 162,4905
+-(void)displayMoveList 167,5067
+-(void)animateMove:172,5185
+-(void)finishMakeMove:196,5970
+-(void)madeMoveFrom:(int)fromSq to:madeMoveFrom:to:229,6942
+-(BOOL)isAtBeginningOfGame 244,7468
+-(BOOL)isAtEndOfGame 248,7537
+-(void)engineMadeMove:(ChessMove *)move comment:engineMadeMove:comment:252,7594
+-(void)engineResigns 307,9194
+-(void)displayPlayerNames 325,9690
+-(void)timerWasFired:331,9861
+-(void)setCurrentPositionFromFEN:348,10356
+-(void)setGame:369,10966
+-(void)newGameWithPGNString:393,11631
+-(IBAction)newGame:423,12325
+-(void)newGameWithFRCId:437,12686
+-(IBAction)newFRCGame:451,13068
+-(IBAction)frcSheetOKPressed:459,13305
+-(IBAction)frcSheetCancelPressed:464,13425
+-(IBAction)frcSheetRandomPressed:469,13549
+          contextInfo:frcSheetDidEnd:returnCode:contextInfo:475,13751
+-(IBAction)saveGame:480,13876
+-(IBAction)addGameToFile:488,14079
+-(IBAction)castleKingside:496,14332
+-(IBAction)castleQueenside:500,14436
+-(IBAction)editPGNTags:504,14542
+-(IBAction)pgnTagsOKPressed:530,15570
+-(IBAction)pgnTagsCancelPressed:553,16434
+              contextInfo:pgnTagsSheetDidEnd:returnCode:contextInfo:560,16651
+-(IBAction)flipBoard:563,16702
+-(IBAction)takeBack:568,16811
+-(IBAction)stepForward:577,17039
+-(IBAction)beginningOfGame:586,17271
+-(IBAction)endOfGame:595,17515
+-(IBAction)displayVariations:604,17747
+-(IBAction)displayComments:612,17970
+-(IBAction)allowVariationEntry:618,18132
+-(IBAction)nextVariation:626,18362
+-(IBAction)previousVariation:635,18602
+-(IBAction)moveVariationUp:644,18850
+-(IBAction)moveVariationDown:650,18999
+-(IBAction)beginningOfVariation:656,19153
+-(IBAction)endOfVariation:665,19407
+-(IBAction)backToBranchPoint:674,19649
+-(IBAction)forwardToBranchPoint:683,19895
+-(IBAction)deleteVariation:692,20147
+-(IBAction)addComment:704,20497
+-(IBAction)deleteComment:714,20793
+-(void)setUpPositionWithFEN:725,21099
+-(IBAction)setUpPosition:733,21349
+-(IBAction)configureEngine:744,21697
+-(void)setLevelType:752,21948
+		    blackIncrement:setTimeControlWithWhiteTime:blackTime:whiteIncrement:blackIncrement:759,22121
+			  forMoves:setTimeControlWithWhiteTime:forMoves:blackTime:forMoves:769,22361
+-(IBAction)gameInX:776,22491
+-(IBAction)gameInXPlusY:786,22749
+-(IBAction)fourtyMovesInXMinutes:800,23187
+-(IBAction)customLevel:810,23435
+-(BOOL)validateMenuItem:818,23678
+-(Game *)game 947,27736
+-(IBAction)analysisMode:951,27770
+-(IBAction)computerPlaysBlack:958,27917
+-(IBAction)computerPlaysWhite:983,28601
+-(IBAction)humanPlaysBoth:1008,29285
+-(IBAction)engineMatch:1014,29391
+-(IBAction)limitStrength:1023,29679
+-(IBAction)strengthSheetOKPressed:1037,30183
+	       contextInfo:strengthSheetDidEnd:returnCode:contextInfo:1057,30876
+-(int)gameMode 1061,30922
+-(void)switchMainEngineTo:1065,30961
+		    enginesShouldPonder:continueAutoplayWithEngine1White:enginesShouldPonder:1083,31533
+	   enginesShouldPonder:autoplayWithWhiteEngine:blackEngine:enginesShouldPonder:1137,33004
+		      ponder:startMatchWithEngine1:engine2:engine1InitialTime:engine2InitialTime:engine1Increment:engine2Increment:numberOfGames:saveFile:positionFile:FRC:ponder:1207,34973
+-(void)stopEngine2 1227,35579
+-(IBAction)promotionChoice:1236,35695
+-(void)boardColorsChanged:1240,35781
+-(void)toggleTournamentMode 1244,35880
+-(void)toggleBeep:1248,35949
+-(void)increaseWhiteTime 1252,36020
+-(void)decreaseWhiteTime 1259,36176
+-(void)increaseBlackTime 1266,36333
+-(void)decreaseBlackTime 1273,36489
+-(IBAction)saveBoardAsPNG:1281,36647
+-(void)dealloc 1290,36865
+
+BoardView.m,666
+#define min(25,850
+static BOOL ImagesLoaded 29,920
+static NSImage *PieceImages[PieceImages30,951
+static void loadImages(32,985
++(void)initialize 48,1776
+-(id)initWithFrame:53,1831
+-(NSImage *)pieceImage:69,2215
+-(BOOL)isHighlighted:73,2286
+-(void)drawRect:80,2442
+-(void)mouseDown:179,5732
+-(void)mouseUp:200,6355
+-(int)mouseDownSquare 218,6946
+-(int)mouseUpSquare 222,6999
+-(BOOL)acceptsFirstResponder 226,7050
+-(void)keyDown:230,7098
+-(void)highlightBoard 266,8231
+-(void)saveBoardAsPNG:274,8353
+-(void)animateMoveFrom:(int)fromSq to:(int)toSq time:animateMoveFrom:to:time:287,8682
+-(void)reloadSquareColors 293,8846
+-(void) dealloc 309,9317
+
+Book.m,502
+#define BOOK_KEY_MASK 26,832
+#define BOOK_MOVE_MASK 27,876
+} BookEntry;33,977
+@interface Book (PrivateAPI)Book(PrivateAPI)41,1166
+-(id)initWithFilename:49,1327
+-(void)close 76,2000
+-(int)searchForKey:80,2051
+-(int)findBookMovesForKey:(uint64)key storeInArray:findBookMovesForKey:storeInArray:100,2472
+		      withVariety:pickMoveForPosition:withVariety:128,3269
+-(void)dealloc 157,4014
+static uint64 read_uint64(162,4086
+static int compare(174,4300
+static void sort_book_moves(181,4504
+
+ChessClock.m,1227
++(int)currentSystemTime 26,826
++(NSString *)prettyTimeString:30,876
+	blackIncrement:initWithWhiteTime:blackTime:whiteIncrement:blackIncrement:53,1460
+-(id)initWithTime:(int)time increment:initWithTime:increment:67,1814
+	     blackTime:(int)btime forMoves:initWithWhiteTime:forMoves:blackTime:forMoves:75,2047
+-(id)initWithTime:(int)time forMoves:initWithTime:forMoves:85,2341
+-(id)init 90,2508
+           blackIncrement:resetWithWhiteTime:blackTime:whiteIncrement:blackIncrement:97,2687
+		 forMoves:resetWithWhiteTime:forMoves:blackTime:forMoves:109,3029
+-(BOOL)isRunning 117,3268
+-(int)whiteRemainingTime 121,3310
+-(int)blackRemainingTime 129,3554
+-(NSString *)whiteRemainingTimeString 137,3798
+-(NSString *)blackRemainingTimeString 141,3908
+-(int)whiteInitialTime 145,4018
+-(void)setWhiteInitialTime:149,4073
+-(int)blackInitialTime 154,4181
+-(void)setBlackInitialTime:158,4236
+-(int)whiteIncrement 163,4344
+-(void)setWhiteIncrement:167,4395
+-(int)blackIncrement 171,4476
+-(void)setBlackIncrement:175,4527
+-(void)startClockForWhite 179,4608
+-(void)startClockForBlack 188,4792
+-(void)stopClock 197,4976
+-(void)pushClock 204,5102
+-(void)addTimeForWhite:234,5922
+-(void)addTimeForBlack:238,5990
+
+ChessMove.m,575
+-(id)initWithPosition:(ChessPosition *)position move:initWithPosition:move:25,803
+-(void)setTime:36,1061
+-(move_t)move 40,1100
+-(BOOL)isNullMove 44,1134
+-(int)time 49,1210
+-(NSString *)comment 53,1241
+-(void)setComment:57,1285
+-(void)deleteComment 63,1372
+-(BOOL)hasComment 70,1460
+-(int)NAG 75,1527
+-(void)setNAG:79,1556
+-(BOOL)hasNAG 83,1603
+-(NSString *)UCIString 89,1737
+-(NSString *)SANString 95,1851
+-(NSString *)description 99,1899
+-(BOOL)isCastle 108,2172
+-(BOOL)isKingsideCastle 113,2246
+-(BOOL)isQueensideCastle 118,2331
+-(void)dealloc 123,2416
+
+ChessPosition.m,1979
++(BOOL)looksLikeAFENString:27,897
++(void)initialize 49,1523
++(id)initialPosition 54,1578
+		fromPosition:positionAfterMakingMove:fromPosition:63,1796
++(NSString *)fenFromFRCid:72,2074
++(id)positionWithFRCid:76,2174
+-(id)initWithFEN:83,2344
+-(id)init 89,2457
+-(NSString *)FENString 94,2503
+-(NSString *)description 99,2617
+-(NSString *)moveToSAN:104,2755
+static char Str[Str110,2942
+-(NSString *)lineToSAN:(NSString *)lineString moveNumbers:lineToSAN:moveNumbers:111,2965
+-(NSString *)lineToSAN:118,3246
+-(position_t *)pos 122,3353
+-(uint64)hashkey 126,3391
+-(int)pieceAtSquare:130,3432
+-(BOOL)whiteToMove 134,3516
+-(int)moveNumber 138,3581
+		     promotion:generateMoveFrom:to:promotion:147,3823
+-(ChessMove *)generateMoveFrom:(int)from to:generateMoveFrom:to:156,4046
+-(int)countLegalMoves 160,4163
+-(BOOL)moveFrom:(int)from to:(int)to promotion:moveFrom:to:promotion:164,4225
+-(BOOL)moveFrom:(int)from to:moveFrom:to:172,4449
+-(void)makeMove:176,4540
+-(void)destinationSquaresFrom:(int)sqIndex storeIn:destinationSquaresFrom:storeIn:182,4665
+-(ChessMove *)parseSANMove:186,4800
+-(ChessMove *)parseCoordinateMove:196,5108
+-(void)display 203,5319
+-(BOOL)isEqualToPosition:207,5362
+-(BOOL)isMate 214,5503
+-(BOOL)isRule50Draw 218,5554
+-(BOOL)isRepetitionDraw 222,5618
+-(BOOL)isMaterialDraw 226,5690
+-(BOOL)isStalemate 230,5758
+-(BOOL)isDraw 234,5819
+-(BOOL)isTerminal 238,5870
+-(BOOL)whiteCanCastleKingside 242,5952
+-(BOOL)whiteCanCastleQueenside 247,6053
+-(BOOL)blackCanCastleKingside 252,6156
+-(BOOL)blackCanCastleQueenside 257,6257
+-(BOOL)sideToMoveCanCastleKingsideImmediately 262,6360
+-(BOOL)sideToMoveCanCastleQueensideImmediately 267,6472
+-(ChessMove *)generateOO 272,6586
+-(ChessMove *)generateOOO 281,6764
+-(NSString *)UCIStringFromOOMove:290,6944
+-(NSString *)UCIStringFromOOOMove:297,7176
+-(void)putPiece:(int)piece atSquare:putPiece:atSquare:304,7409
+-(void)removePieceAtSquare:311,7658
+-(void)dealloc 315,7750
+
+CommentWindowController.m,186
+  boardController:initWithMove:boardController:27,918
+-(void)windowDidLoad 36,1185
+-(IBAction)okButtonPressed:41,1274
+-(IBAction)cancelButtonPressed:50,1542
+-(void)dealloc 54,1614
+
+CustomLevelController.m,113
+-(id)initWithBoardController:25,854
+-(IBAction)okButtonPressed:31,1011
+-(IBAction)cancelButtonPressed:49,1609
+
+Engine.m,2015
++(NSString *)mainEnginePath 27,848
++(int)defaultHashSize 46,1588
++(id)installedEngines 51,1711
++(id)installedEngineOptions 56,1827
++(id)installedEngineBookOptions 62,1962
++(NSString *)pathOfEngineWithName:68,2103
++(NSDictionary *)optionsOfEngineWithName:72,2216
++(BOOL)useOwnBookForEngineWithName:76,2342
++(BOOL)useGUIBookForEngineWithName:87,2619
++(void)uninstallEngineWithName:98,2896
+	    installOnly:initWithController:path:installOnly:127,4111
+-(id)initWithController:(EngineController *)ec path:initWithController:path:140,4426
+-(id)initWithController:144,4561
+-(NSString *)name 148,4683
+-(NSString *)author 152,4721
+-(NSTask *)task 156,4763
+-(NSMutableArray *)options 160,4799
+-(NSMutableArray *)visibleOptions 164,4849
+-(void)start 174,5157
+-(void)sendCommand:223,6701
+-(void)queueCommand:229,6882
+-(void)processQueue 237,7081
+                  binc:searchWithWtime:btime:winc:binc:258,7688
+                  binc:ponderWithWtime:btime:winc:binc:276,8168
+-(void)searchInfinite 292,8549
+-(BOOL)hasOptionWithName:301,8746
+-(BOOL)supportsLimitStrength 309,8998
+-(BOOL)supportsOwnBook 313,9089
+-(UCIOption *)optionWithName:317,9164
+-(void)pushButtonNamed:325,9424
+-(void)setOptionName:(NSString *)optionName value:setOptionName:value:339,9848
+-(void)immediateSetOptionName:(NSString *)optionName value:immediateSetOptionName:value:357,10407
+-(void)ponderhit 375,10979
+-(void)stop 379,11039
+-(void)startNewGame 383,11089
+-(void)setPosition:387,11183
+-(void)parseInfo:392,11328
+-(void)parseBestmove:501,15326
+-(void)saveOptions 528,16192
+-(void)loadOptions 546,16813
+-(BOOL)shouldUseGUIBook 557,17192
+-(BOOL)shouldUseOwnBook 561,17274
+-(void)setShouldUseGUIBook 565,17356
+-(void)setShouldUseOwnBook 580,17943
+-(void)setShouldUseNoBook 595,18529
+-(void)handleCommand:610,19116
+-(void)taskDataAvailable:687,21731
+-(void)handleError:716,22630
+-(void)taskErrorDataAvailable:720,22742
+-(void)askIfReady 747,23564
+-(void)quit 752,23639
+-(void)dealloc 756,23691
+
+EngineConfigController.m,493
+-(id)initWithEngine:26,869
+-(void)windowDidLoad 35,1170
+-(int)numberOfRowsInTableView:61,2105
+           row:tableView:objectValueForTableColumn:row:67,2289
+-(void)comboOptionChanged:77,2588
+-(void)checkOptionChanged:83,2760
+-(void)buttonWasPushed:89,2937
+-(void)controlTextDidChange:94,3077
+-(void)tableViewSelectionDidChange:100,3250
+-(IBAction)okButtonPressed:202,7198
+-(IBAction)cancelButtonPressed:227,8032
+-(IBAction)defaultsButtonPressed:231,8104
+-(void) dealloc 244,8513
+
+EngineController.m,1513
+-(id)initWithBoardController:(BoardController *)bc path:initWithBoardController:path:30,948
+-(id)initWithBoardController:(BoardController *)bc name:initWithBoardController:name:54,1868
+-(id)initWithBoardController:59,2041
+-(id)engine 64,2180
+-(NSString *)engineName 68,2214
+-(void)setEngineName:71,2263
+-(void)setRole:79,2488
+-(int)role 88,2675
+-(void)setShouldPonder:92,2712
+-(NSString *)setposString 96,2782
+-(void)setCurrentPosition:131,3945
+-(void)setPositionFromGame:136,4119
+-(void)setPositionFromGame:(Game *)aGame withPonderMove:setPositionFromGame:withPonderMove:143,4285
+-(void)stopThinking 146,4365
+-(void)abortThinking 150,4420
+-(void)moveWasMade 155,4518
+-(void)windowDidLoad 179,5360
+-(void)clearWindow 184,5467
+-(void)setDepth:199,5806
+-(void)setMove:(NSString *)move number:setMove:number:206,6021
+-(void)setTime:215,6366
+-(void)setCPScore:219,6436
+-(void)setMateScore:242,6986
+-(void)setNodes:259,7473
+-(void)setNPS:267,7721
+-(void)setPV:274,7929
+-(void)setCurrLine1:288,8338
+-(void)setCurrLine2:303,8795
+-(void)setCurrLine3:318,9252
+-(void)setCurrLine4:333,9709
+-(NSString *)moveComment 348,10166
+-(void)bestmove:(NSString *)bestmove ponder:bestmove:ponder:364,10765
+-(void)searchInfinite 407,12349
+                  binc:searchWithWtime:btime:winc:binc:430,13106
+		 pmove:ponderWithWtime:btime:winc:binc:move:pmove:467,14195
+-(void)startAnalyseMode 496,15036
+-(void)startNewGame 503,15157
+-(void)setEngineIsReady:522,15751
+-(void)dealloc 526,15817
+
+Game.m,1858
+-(id)initWithFEN:26,864
+-(id)initWithFRCid:57,1767
+-(id)initWithPGNString:63,1889
+-(id)init 198,6123
+-(ChessClock *)clock 202,6210
+-(NSString *)rootFEN 206,6252
+-(NSString *)whitePlayer 210,6296
+-(void)setWhitePlayer:214,6348
+-(NSString *)blackPlayer 220,6453
+-(void)setBlackPlayer:224,6505
+-(NSString *)event 230,6610
+-(void)setEvent:234,6650
+-(NSString *)site 240,6737
+-(void)setSite:244,6775
+-(NSString *)date 250,6859
+-(void)setDate:254,6897
+-(NSString *)round 260,6981
+-(void)setRound:264,7021
+-(result_t)result 270,7108
+-(void)setResult:274,7148
+-(id)root 278,7196
+-(id)currentNode 282,7226
+-(id)currentPosition 286,7270
+-(int)pieceAtSquare:290,7329
+-(void)pushClock 294,7433
+-(void)insertMove:305,7661
+-(void)makeMove:311,7812
+-(void)unmakeMove 316,7915
+-(void)stepForward 321,8004
+-(void)goToBeginningOfGame 326,8117
+-(void)goToEndOfGame 330,8214
+-(void)deleteVariation 335,8353
+-(BOOL)isAtBeginningOfGame 343,8546
+-(BOOL)isAtEndOfGame 348,8634
+-(BOOL)previousVariationExists 357,8866
+-(BOOL)nextVariationExists 365,9049
+-(void)goToPreviousVariation 375,9298
+-(void)goToNextVariation 383,9540
+-(void)moveVariationUp 391,9774
+-(void)moveVariationDown 403,10183
+-(BOOL)branchPointExistsUp 415,10590
+-(BOOL)branchPointExistsDown 428,10845
+-(void)goBackToBranchPoint 440,11131
+-(void)goForwardToBranchPoint 453,11392
+-(BOOL)isAtBeginningOfVariation 466,11697
+-(void)goToBeginningOfVariation 470,11771
+-(BOOL)isAtEndOfVariation 483,12138
+-(void)goToEndOfVariation 488,12241
+-(BOOL)isInAVariation 493,12364
+-(void)addComment:501,12544
+-(void)deleteComment 506,12659
+-(BOOL)commentExistsForCurrentMove 511,12751
+-(void)addNAG:516,12875
+-(ChessMove *)parseSANMove:521,12967
+static NSString* breakLinesInString(525,13068
+static char ResultString[ResultString563,14113
+-(NSString *)PGNString 566,14207
+
+GameListController.m,486
+@interface GameListController (PrivateAPI)GameListController(PrivateAPI)28,874
+		    filename:initWithBoardController:filename:36,1117
+-(void)initializeGameIndicesInBackground:81,2295
+-(void)finishedReadingIndices:91,2516
+-(void)doubleClickInGameList:97,2654
+-(void)windowDidLoad 101,2726
+-(int)numberOfRowsInTableView:106,2875
+	   row:tableView:objectValueForTableColumn:row:111,3032
+-(IBAction)closeGameFile:125,3617
+-(IBAction)loadGame:130,3704
+-(void)dealloc 136,3885
+
+GameNode.m,946
+	       parent:initWithPosition:move:parent:30,1004
+-(id)initWithPosition:42,1301
+-(id)init 46,1410
+-(id)position 50,1492
+-(id)move 54,1530
+-(GameNode *)parent 58,1560
+-(NSMutableArray *)children 62,1602
+-(id)childNodeAtIndex:66,1654
+-(id)firstChildNode 70,1734
+-(NSArray *)remainingChildNodes 74,1796
+-(NSArray *)siblings 83,2034
+-(BOOL)isFirstChild 88,2120
+-(void)addChildNode:94,2240
+-(void)removeChildNodeAtIndex:107,2694
+-(void)removeAllChildNodes 111,2781
+-(NSString *)moveListStringWithoutSiblings 115,2844
+-(void)moveListStringWithParensAppendedToString:138,3618
+-(NSString *)moveListString 148,3899
+			     variations:moveListStringWithComments:variations:176,4872
+								  currentNode:moveListAttributedStringWithoutSiblingsIncludeComments:currentNode:216,6295
+						currentNode:moveListAttributedStringWithComments:variations:currentNode:263,7909
+-(void)dealloc 328,10200
+-(NSString *)description 339,10472
+
+GameParser.m,429
+static const int CHAR_EOF 24,790
+@interface GameParser (PrivateAPI)GameParser(PrivateAPI)31,911
+-(id)initWithString:41,1074
+-(BOOL)getNextToken:52,1359
+-(void)tokenRead 62,1560
+-(void)skipBlanks 236,6102
+-(NSString *)readComment 276,7075
+-(void)charRead 301,7758
+-(void)tokenUnread 310,7925
+-(void)charUnread 314,7970
+-(void)dealloc 318,8013
+static BOOL is_symbol_start(324,8097
+static BOOL is_symbol_next(328,8230
+
+MatchController.m,474
+		      ponder:initWithBoardController:engine1:engine2:engine1Time:engine2Time:engine1Increment:engine2Increment:numberOfGames:saveFile:positionFile:FRC:ponder:38,1229
+-(void)windowDidLoad 61,1854
+-(void)startMatch 66,1953
+-(void)startNextMatchGame:70,2010
+-(void)displayMatchState 114,3408
+-(void)gameFinished:138,4165
+-(IBAction)abortButtonPressed:165,5056
+-(IBAction)adjudicateButtonPressed:169,5168
+-(IBAction)okButtonPressed:173,5285
+-(void)dealloc 177,5353
+
+MoveAnimation.m,161
+-(id)init 25,811
+-(int)from 30,916
+-(int)to 34,947
+-(void)setCurrentProgress:38,974
+-(void)startAnimationFrom:(int)fromSq to:startAnimationFrom:to:46,1195
+
+MyNSAttributedStringAdditions.m,403
+@implementation NSAttributedString (MyNSAttributedStringAdditions)23,796
++(NSAttributedString *)attributedStringWithString:25,864
++(NSAttributedString *)attributedStringWithAttributedString:31,1058
++(NSAttributedString *)attributedStringWithFormat:37,1282
+  va_list args;38,1358
+  NSString *string;string39,1374
+  NSAttributedString *astring;astring40,1394
+  string 43,1452
+  astring 45,1538
+
+MyNSMutableAttributedStringAdditions.m,580
+@implementation NSMutableAttributedString (MyNSMutableAttributedStringAdditions)23,844
++(NSMutableAttributedString *)attributedStringWithString:25,926
++(NSMutableAttributedString *)attributedStringWithAttributedString:31,1141
++(NSMutableAttributedString *)attributedStringWithFormat:37,1386
+  va_list args;38,1469
+  NSString *string;string39,1485
+  NSMutableAttributedString *astring;astring40,1505
+  string 43,1570
+  astring 45,1656
+-(void)appendString:51,1784
+-(void)appendFormat:56,1921
+  va_list args;57,1967
+  NSString *string;string58,1983
+  string 60,2029
+
+NewEngineMatchController.m,464
+-(id)initWithBoardController:26,879
+-(void)windowDidLoad 32,1027
+-(IBAction)cancelButtonPressed:49,1450
+-(IBAction)configureEngine1Pressed:53,1522
+-(IBAction)configureEngine2Pressed:56,1573
+-(IBAction)okButtonPressed:59,1624
+-(IBAction)pickPositionPressed:80,2475
+	   contextInfo:openPanelDidEnd:returnCode:contextInfo:95,2912
+-(IBAction)pickSavePressed:102,3094
+	   contextInfo:savePanelDidEnd:returnCode:contextInfo:115,3482
+-(void)dealloc 122,3654
+
+PGN.m,1258
+static const int TAB_SIZE 35,1047
+static const int CHAR_EOF 36,1078
+enum token_t 40,1122
+  TOKEN_ERROR 41,1137
+  TOKEN_EOF 42,1157
+  TOKEN_SYMBOL 43,1176
+  TOKEN_STRING 44,1198
+  TOKEN_INTEGER 45,1220
+  TOKEN_NAG 46,1243
+  TOKEN_RESULT 47,1262
+@interface PGN (PrivateAPI)PGN(PrivateAPI)58,1453
+-(id)initWithFilename:71,1699
+-(void)initializeGameIndices 118,2759
+-(void)close 163,3952
+-(BOOL)nextGame 167,3986
+-(BOOL)nextMove:243,5847
+-(BOOL)nextMoveIntoCString:(char *)string withSize:nextMoveIntoCString:withSize:252,6069
+-(BOOL)skipMove 330,7941
+-(void)tokenRead 382,9202
+-(void)tokenUnread 405,9668
+-(void)readToken 409,9713
+-(void)skipBlanks 581,14294
+static BOOL is_symbol_start(639,15808
+static BOOL is_symbol_next(643,15941
+static void raisePGNException(649,16109
+-(void)charRead 658,16362
+-(void)charUnread 687,16876
+-(void)rewind 691,16919
+-(NSString *)white 695,16954
+-(NSString *)black 699,17027
+-(NSString *)event 703,17100
+-(NSString *)date 707,17173
+-(NSString *)site 711,17244
+-(NSString *)round 715,17317
+-(NSString *)result 719,17390
+-(void)goToGameNumber:723,17465
+-(NSString *)pgnStringForGameNumber:735,17798
+-(NSString *)moveList 757,18447
+-(int)numberOfGames 770,18805
+-(void)dealloc 774,18854
+
+PGNProgressController.m,91
+-(id)initWithFilename:24,826
+-(void)windowDidLoad 32,1092
+-(void)setDoubleValue:38,1265
+
+PreferencesController.m,370
+-(id)init 5,74
+-(void)windowDidLoad 10,160
+-(IBAction)changeDarkSquareColor:33,1006
+-(IBAction)changeLightSquareColor:43,1337
+-(IBAction)analysisInMoveListSwitched:53,1670
+-(IBAction)hashTextFieldChanged:58,1843
+-(IBAction)resignSwitched:61,1891
+-(IBAction)whiteScoreSwitched:66,2044
+-(IBAction)beepWhenMoveSwitched:72,2223
+-(void)controlTextDidChange:79,2486
+
+SearchLogController.m,41
+-(id)init 24,822
+-(void)setFont 29,906
+
+SetupR64BoardView.m,108
+-(id)initWithFrame:26,881
+-(void)drawRect:33,1035
+-(void)setController:81,2703
+-(void)mouseDown:85,2777
+
+SetupR64WindowController.m,664
+static BOOL ImagesLoaded 27,916
+static NSImage *PieceImages[PieceImages28,947
+static void loadImages(30,981
++(void)initialize 46,1796
+-(id)initWithBoardController:(BoardController *)bc FEN:initWithBoardController:FEN:50,1835
+-(void)windowDidLoad 58,2091
+-(int)pieceAtSquare:75,2726
+-(NSImage *)pieceImage:79,2816
+-(IBAction)cancelButtonPressed:83,2886
+-(IBAction)okButtonPressed:87,2958
+-(IBAction)castleRightsChanged:92,3095
+-(IBAction)clearBoardButtonPressed:95,3142
+-(IBAction)resetButtonPressed:106,3502
+-(IBAction)selectedPieceChanged:117,3994
+-(IBAction)sideToMoveChanged:122,4144
+-(void)mouseDownAtSquare:125,4189
+-(void)dealloc 133,4448
+
+UCIOption.m,648
+@interface UCIOption (PrivateAPI)UCIOption(PrivateAPI)24,796
++(BOOL)isKeyword:31,901
+-(id)initWithString:42,1214
+-(NSString *)description 132,4262
+-(NSString *)name 158,5353
+-(void)setName:162,5391
+-(int)min 168,5487
+-(void)setMin:172,5516
+-(int)max 176,5563
+-(void)setMax:180,5592
+-(int)type 184,5639
+-(void)setType:188,5670
+-(NSArray *)comboValues 192,5721
+ -(void)setComboValues:196,5772
+-(NSString *)defaultValue 202,5911
+ -(void)setDefaultValue:206,5965
+-(NSString *)value 212,6111
+-(void)setValue:216,6151
+-(NSDictionary *)dictionary 223,6283
+-(BOOL)isHidden 246,7230
+-(id)copyWithZone:254,7466
+-(void)dealloc 266,7780
+
+UninstallWindowController.m,222
+-(id)init 25,853
+-(int)numberOfRowsInTableView:34,1091
+           row:tableView:objectValueForTableColumn:row:40,1284
+-(IBAction)cancelButtonPressed:46,1459
+-(IBAction)okButtonPressed:50,1531
+-(void)dealloc 57,1778
+
+main.m,17
+int main(23,808
+
+mersenne.m,326
+#define N 47,2050
+#define M 48,2064
+#define MATRIX_A 49,2078
+#define UPPER_MASK 50,2134
+#define LOWER_MASK 51,2198
+static unsigned long mt[mt53,2262
+static int mti=54,2328
+void init_genrand(57,2431
+void init_by_array(76,3125
+uint32 genrand_int32(102,3983
+uint64 genrand_int64(139,4977
+void init_mersenne(146,5089
+
+position.m,2416
+const int Directions[Directions22,775
+const uint32 FileMask[FileMask41,1311
+const int SlidingArray[SlidingArray42,1369
+const int PawnPush[PawnPush43,1431
+const int PieceMask[PieceMask45,1467
+uint8 PawnRank[PawnRank51,1642
+attack_data_t AttackData_[AttackData_52,1666
+attack_data_t *AttackData AttackData53,1698
+hashkey_t Zobrist[Zobrist54,1745
+hashkey_t Zobrist[BK][64], ZobColour,54,1745
+hashkey_t Zobrist[BK][64], ZobColour, ZobEP[ZobEP54,1745
+hashkey_t Zobrist[BK][64], ZobColour, ZobEP[64], ZobCastle[ZobCastle54,1745
+void init_zobrist(60,1914
+hashkey_t compute_hash_key(72,2192
+static void init_tables(84,2610
+static void init_attack_data(90,2748
+void init(106,3266
+void init_position(113,3363
+void init_piece_lists(119,3518
+void copy_position(135,4026
+bool is_attacked(140,4163
+bool position_is_check(159,4683
+int find_checkers(194,5736
+int is_pinned(244,7281
+int count_pieces(267,7914
+void init_piece_counts(276,8185
+char *square2str(square2str283,8415
+void print_square(288,8540
+char *move2str(move2str292,8635
+void print_move(309,9242
+char *time_string(time_string315,9336
+int parse_square(352,10410
+void position_from_fen(358,10578
+char *position_to_fen(position_to_fen456,13659
+int get_time(502,15071
+void fprint_position(508,15183
+void print_position(532,15974
+bool irreversible(536,16054
+void make_move(540,16130
+void unmake_move(629,19200
+void make_nullmove(690,21155
+void unmake_nullmove(703,21575
+bool ep_is_legal(712,21835
+bool move_is_legal(721,22056
+move_stack_t *generate_check_evasions(generate_check_evasions746,22848
+move_stack_t *generate_moves(generate_moves914,29056
+move_t generate_move(1028,33183
+bool position_is_mate(1039,33499
+bool position_is_rule50_draw(1047,33700
+bool position_is_material_draw(1053,33863
+bool position_is_repetition_draw(1063,34276
+bool position_is_stalemate(1071,34539
+bool position_is_draw(1081,34801
+static int ambiguity(1089,35001
+char *san_string(san_string1126,36090
+char *san_line(san_line1194,37753
+move_t parse_move(1233,38973
+char *san_move_from_string(san_move_from_string1266,40192
+char *san_line_from_string(san_line_from_string1274,40410
+void find_destination_squares_from(1305,41267
+move_t find_move_matching(1320,41749
+move_t parse_san_move(1334,42147
+int count_legal_moves(1436,44821
+move_t can_castle_kingside(1449,45098
+move_t can_castle_queenside(1460,45407
+
+EngineInstaller.m,0

@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {abortButtonPressed = id; adjudicateButtonPressed = id; okButtonPressed = id; }; 
+            CLASS = MatchController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                engine1StatsTextField = id; 
+                engine2StatsTextField = id; 
+                gameCountTextField = id; 
+                okButton = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

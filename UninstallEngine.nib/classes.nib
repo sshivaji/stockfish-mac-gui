@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelButtonPressed = id; okButtonPressed = id; }; 
+            CLASS = UninstallWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {engineTable = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

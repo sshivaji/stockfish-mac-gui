@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelButtonPressed = id; 
+                configureEngine1Pressed = id; 
+                configureEngine2Pressed = id; 
+                okButtonPressed = id; 
+                pickPositionPressed = id; 
+                pickSavePressed = id; 
+            }; 
+            CLASS = NewEngineMatchController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                FRCSwitch = id; 
+                alternateColorsSwitch = id; 
+                blackEnginePopup = id; 
+                blackInitialTimeTextField = id; 
+                blackMoveBonusTextField = id; 
+                numOfGamesTextField = id; 
+                ponderSwitch = id; 
+                whiteEnginePopup = id; 
+                whiteInitialTimeTextField = id; 
+                whiteMoveBonusTextField = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
